@@ -1,0 +1,322 @@
+   @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+   /* Universal Selector */
+   
+   * {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+   }
+   
+    :root {
+       --pine: #0f241d;
+       --mist: #ccd1d7;
+       --maiden: #708A81;
+       --sierra: #fba31b;
+       --ghost: #8fb2b8;
+   }
+   
+   main {
+       height: 100%;
+       width: 100%;
+       background-color: var(--mist);
+   }
+   /* Element Selectors */
+   
+   body {
+       font-family: 'Playfair Display', serif;
+       background-color: #FDF8F5;
+       color: #4F4846;
+       line-height: 1.6;
+   }
+   
+   header {
+       padding: 35px;
+       margin: 0 auto;
+       background-color: var(--mist);
+       color: var(--maiden);
+       border-bottom: 2px solid var(--pine);
+   }
+   /*nav bar attributes*/
+   
+   li {
+       text-align: right;
+       text-decoration: none;
+       list-style-type: none;
+       float: right;
+       margin-left: 25px;
+       font-size: 110%;
+   }
+   
+   ul {
+       list-style-type: none;
+   }
+   /*content attributes*/
+   
+   h1 {
+       display: inline-block;
+       font-size: 250%;
+       color: var(--pine);
+   }
+   
+   h2 {
+       font-weight: 300;
+       line-height: 1.2;
+       margin: 10px 0;
+       font-size: 20px;
+       text-align: center;
+   }
+   
+   p {
+       margin: 20px 200px;
+       text-align: center;
+   }
+   
+   footer {
+       margin-top: 0;
+       bottom: 0;
+       text-align: center;
+       border-top: 2px solid var(--maiden);
+   }
+   /* Class Selectors */
+   
+   .welcome {
+       flex-wrap: wrap;
+       border-bottom: 2px solid var(--pine);
+       height: 320px;
+       margin: auto;
+       padding: 3%;
+       justify-content: center;
+   }
+   
+   .moutains {
+       justify-content: center;
+   }
+   
+   .card {
+       padding: 10px 10px;
+       height: 150px;
+       margin: auto;
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+   }
+   
+   .selfie {
+       border-radius: 50%;
+       height: 210px;
+       width: 200px;
+       margin-left: 10px;
+       margin-right: auto;
+       margin-top: 7px;
+       border: 2px solid var(--maiden);
+   }
+   
+   .about-me {
+       flex-wrap: wrap;
+       max-width: 100%;
+       margin: 100px auto;
+       background-color: var(--river);
+       color: var(--pine);
+       border: 2px solid var(--sierra);
+   }
+   
+   .showcase {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       margin: 100px 20px;
+   }
+   
+   .about-me-header {
+       text-align: center;
+   }
+   
+   .showcase-text {
+       margin: 30px 25px;
+       align-self: end;
+       font-size: 12px;
+       position: absolute;
+       margin: -1rem 0 1rem 0;
+       padding: 0.5rem 1rem;
+       background-color: var(--pine);
+       color: var(--sierra);
+       border: 2px solid var(--pine);
+   }
+   
+   .showcase .grid {
+       overflow: visible;
+       display: grid;
+       grid-template-columns: 60px 60px;
+       grid-template-rows: 90px 90px;
+       column-gap: 30px;
+       height: 100px;
+       width: 300px;
+       align-self: center;
+   }
+   
+   .container {
+       max-width: 800px;
+       margin: 20px auto;
+       background-color: var(--maiden);
+       color: var(--mist);
+       border: 2px solid var(--pine);
+   }
+   
+   .button-container {
+       padding: 1%;
+       align-content: center;
+       text-align: center;
+       border-top: 2px solid var(--sierra);
+   }
+   
+   .button {
+       color: var(--pine);
+       font-size: 20px;
+       font-weight: 500;
+       padding: 23px;
+       background-color: var(--maiden);
+       border: solid var(--pine) 2px;
+       text-decoration: none;
+       display: inline-block;
+       cursor: pointer;
+   }
+   
+   .contact {
+       margin: auto;
+       position: relative;
+   }
+   
+   .social-buttons {
+       text-align: center;
+       margin: auto;
+   }
+   /*Creates a glow effect when hovered*/
+   
+   .selfie:hover {
+       box-shadow: inset 0px 0px 8px var(--sierra), 0 0 15px var(--pine);
+   }
+   
+   .container:hover,
+   .button:hover {
+       box-shadow: inset 0px 0px 8px var(--ghost), 0 0 15px var(--ghost);
+   }
+   /* link hover effect author: Tiago Alexandre Lopes*/
+   
+   a {
+       color: white;
+       text-decoration: none;
+       position: relative;
+   }
+   
+   .showcase-text a {
+       color: var(--sierra);
+   }
+   
+   nav a::after {
+       content: "";
+       background: var(--sierra);
+       mix-blend-mode: soft-light;
+       width: calc(100% + 20px);
+       height: 0;
+       position: absolute;
+       bottom: -4px;
+       left: -10px;
+       transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+   }
+   
+   .showcase-text a::after {
+       content: "";
+       background: var(--mist);
+       mix-blend-mode: soft-light;
+       width: calc(100% + 20px);
+       height: 0;
+       position: absolute;
+       bottom: -4px;
+       left: -10px;
+       transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+   }
+   
+   a:hover::after {
+       height: calc(100% + 8px)
+   }
+   /* The End */
+   
+   .note {
+       top: auto;
+       bottom: 0;
+       color: #ddd;
+       font-size: 13px;
+       text-transform: none;
+       font-weight: 300;
+       text-align: center;
+       padding: 10px;
+       width: 100%;
+       max-width: 500px;
+   }
+   /* on <pre> click, select all contents so the code is highlighted */
+   
+   .card pre:active {
+       user-select: all;
+   }
+   /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
+   
+   @media only screen and (min-width: 960px) {
+       .mountains {
+           margin: 0;
+       }
+   }
+   
+   @media only screen and (min-width: 768px) and (max-width: 959px) {
+       .about-me-text {
+           margin: 20px 80px;
+       }
+       .about-me {
+           height: 620px;
+       }
+       p {
+           margin: 20px 20px;
+       }
+       .mountains {
+           max-width: 100%;
+       }
+   }
+   
+   @media only screen and (min-width: 653px) and (max-width: 767px) {
+       .about-me-text {
+           margin: 10px;
+       }
+       .mountains {
+           max-width: 100%;
+       }
+   }
+   
+   @media only screen and (min-width: 400px) and (max-width: 654px) {
+       body {
+           width: 100%;
+       }
+       .mountains {
+           max-width: 100%;
+       }
+       h1 {
+           max-width: 100%;
+       }
+       .about-me-text {
+           margin: 10px;
+       }
+   }
+   
+   @media only screen and (min-width: 250px) and (max-width: 399px) {
+       body {
+           width: 100%;
+       }
+       .mountains {
+           max-width: 100%;
+       }
+       h1 {
+           max-width: 100%;
+           font-size: 35px;
+       }
+       .about-me-text {
+           margin: 10px;
+       }
+   }
