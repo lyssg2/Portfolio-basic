@@ -191,11 +191,6 @@
        margin: auto;
    }
    /*Creates a glow effect when hovered*/
-   
-   .selfie:hover {
-       box-shadow: inset 0px 0px 8px var(--sierra), 0 0 15px var(--pine);
-   }
-   
    .container:hover,
    .button:hover {
        box-shadow: inset 0px 0px 8px var(--ghost), 0 0 15px var(--ghost);
@@ -253,12 +248,8 @@
        width: 100%;
        max-width: 500px;
    }
-   /* on <pre> click, select all contents so the code is highlighted */
-   
-   .card pre:active {
-       user-select: all;
-   }
-   /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
+
+   /* full screen */
    
    @media only screen and (min-width: 960px) {
        .mountains {
@@ -266,6 +257,8 @@
        }
    }
    
+   /* tablet screen query */
+
    @media only screen and (min-width: 768px) and (max-width: 959px) {
        .about-me-text {
            margin: 20px 80px;
@@ -290,6 +283,7 @@
        }
    }
    
+   /*smartphone screen query*/
    @media only screen and (min-width: 400px) and (max-width: 654px) {
        body {
            width: 100%;
