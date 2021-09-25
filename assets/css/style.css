@@ -88,10 +88,6 @@
        justify-content: center;
    }
    
-   .moutains {
-       justify-content: center;
-   }
-   
    .card {
        padding: 10px 10px;
        height: 150px;
@@ -136,7 +132,7 @@
        align-self: end;
        font-size: 12px;
        position: absolute;
-       margin: -1rem 0 1rem 0;
+       margin: 10px 0 1rem 0;
        padding: 0.5rem 1rem;
        background-color: var(--pine);
        color: var(--sierra);
@@ -145,13 +141,13 @@
    
    .showcase .grid {
        overflow: visible;
-       display: grid;
-       grid-template-columns: 60px 60px;
-       grid-template-rows: 90px 90px;
        column-gap: 30px;
+       grid-template-columns: 158px 60px;
+       grid-template-rows: 98px 90px;
        height: 100px;
-       width: 300px;
+       width: 250px;
        align-self: center;
+       text-align: right;
    }
    
    .container {
@@ -160,8 +156,16 @@
        background-color: var(--maiden);
        color: var(--mist);
        border: 2px solid var(--pine);
+       transition: transform 0.2s linear;
    }
+
    
+   .icons {
+       position: relative;
+       padding: 12%;
+       justify-content: center;
+
+   }
    .button-container {
        padding: 1%;
        align-content: center;
@@ -179,6 +183,7 @@
        text-decoration: none;
        display: inline-block;
        cursor: pointer;
+       transition: transform 0.2s linear;
    }
    
    .contact {
@@ -194,6 +199,7 @@
    .container:hover,
    .button:hover {
        box-shadow: inset 0px 0px 8px var(--ghost), 0 0 15px var(--ghost);
+       transform: translateY(-7px);
    }
    /* link hover effect author: Tiago Alexandre Lopes*/
    
